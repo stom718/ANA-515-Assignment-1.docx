@@ -14,6 +14,7 @@ library(bslib)
 url <- "https://raw.githubusercontent.com/fivethirtyeight/guns-data/master/full_data.csv"
 gun_deaths <- read_csv(url)
 youth <- filter(gun_deaths, age <=65)
+summary(youth)
 ```
 
 We have data about `r nrow(gun_deaths)` individuals killed by guns. Only 
